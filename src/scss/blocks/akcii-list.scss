@@ -1,0 +1,17 @@
+.akcii-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+
+  @media (min-width: $width-tablet-h) {
+    display: grid;
+    justify-content: space-between;
+    gap: 103px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  a {
+    display: inline-flex;
+  }
+}

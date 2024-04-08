@@ -1,0 +1,37 @@
+.input-wrap {
+}
+
+.input-wrap__label {
+  display: inline-block;
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+}
+
+.input-wrap__input {
+  display: flex;
+  width: 100%;
+  padding: 8px 20px 7px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  outline: 0;
+  border: 5px solid rgba($color: $color-text-secondary, $alpha: 50%);
+  border-radius: 15px;
+  background-color: #fff;
+
+  &::placeholder {
+    color: $color-text-secondary;
+  }
+
+  &:user-invalid {
+    border-color: rgba($color: $color-primary, $alpha: 50%);
+  }
+}
+
+.input-wrap__input--textarea {
+  height: 70px;
+  resize: none;
+}

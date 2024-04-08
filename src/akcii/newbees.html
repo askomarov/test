@@ -1,0 +1,187 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Акция "Новичкам везет" | Голдис</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__top">
+          <a href="/" class="header__logo-link">
+            <picture>
+              <!-- <source srcset="" type="image/webp"> -->
+              <img
+                src="/assets/logo-color.png"
+                width="339"
+                height="56"
+                alt="Голдис голотип"
+                class="header__logo-link-image"
+              />
+            </picture>
+          </a>
+          <p class="header__text">
+            г. Екатеринбург <br />
+            c 09:00 до 22:00 без перерывов и выходных <br />
+            состоим в государственном реестре ломбардов
+          </p>
+          <button type="button" class="app-button header__button">Адреса ломбардов</button>
+        </div>
+        <nav class="header__nav">
+          <a href="/#">тарифы</a>
+          <a href="/#">акции</a>
+          <a href="/#">частые вопросы</a>
+          <a href="/#">контакты</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="akciya">
+        <div class="container akciya__container">
+          <div class="akciya__image-wrap">
+            <img src="/assets/akcii/newbees.png" width="358" height="323" alt="">
+          </div>
+          <div class="akciya__description">
+            <h1 class="app-title akciya__title">Новичкам везет</h1>
+            <p class="akciya__text">
+              В личном кабинете Вы можете оплатить проценты по действующему займу или погасить заем полностью. Залог при
+              дистанционной оплате Вы можете забрать на следующий день или позже. Хранение залога осуществляется
+              бесплатно..
+            </p>
+            <footer class="akciya__footer">
+              <button type="button" class="primary-button akciya__btn-take-part">Участвовать в акции</button>
+              <a href="/#" class="akciya__btn-back secondary-button"> Вернуться назад </a>
+            </footer>
+          </div>
+        </div>
+      </section>
+      <section class="other-akcii">
+        <div class="container">
+          <h2 class="app-title other-akcii__title">Другие новости и акции</h2>
+          <ul class="akcii-list">
+            <li class="akcii-list__item">
+              <a href="/#" aria-label="перейти на страницу акции: ___">
+                <img src="/assets/akcii/newyear.png" width="358" height="323" alt="" />
+              </a>
+            </li>
+            <li class="akcii-list__item">
+              <a href="/#" aria-label="перейти на страницу акции: ___">
+                <img src="/assets/akcii/pensia.png" width="358" height="323" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div>
+            <p class="footer__title">клиентам</p>
+            <ul class="footer__list">
+              <li>
+                <a href="/#">Оплата процентов</a>
+              </li>
+              <li>
+                <a href="/#">Тарифы</a>
+              </li>
+              <li>
+                <a href="/#">Акции</a>
+              </li>
+              <li>
+                <a href="/#">Вопросы и ответы</a>
+              </li>
+              <li>
+                <a href="/#">Публичные торги</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer__title">о компании</p>
+            <ul class="footer__list">
+              <li>
+                <a href="/#">О ломбардах</a>
+              </li>
+              <li>
+                <a href="/#">Наши ломбарды</a>
+              </li>
+              <li>
+                <a href="/#">Правовая информация</a>
+              </li>
+              <li>
+                <a href="/#"
+                  >Политика обработки <br />
+                  персональных данных</a
+                >
+              </li>
+              <li>
+                <a href="/#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="tel:+79630482225" class="footer__tel"> +7&nbsp;(963)&nbsp;048&#8209;22&#8209;25 </a>
+            <ul class="footer__social app-social-list">
+              <li class="app-social-list__item">
+                <a href="/#" class="app-social-list__item-link" aria-label="ссылка на страницу в Вконтакте">
+                  <img src="/assets/social/vk.png" width="26" height="18" alt="vl logo" />
+                </a>
+              </li>
+              <li class="app-social-list__item">
+                <a href="/#" class="app-social-list__item-link" aria-label="ссылка на телеграм">
+                  <img src="/assets/social/tg.png" width="20" height="18" alt="tg logo" />
+                </a>
+              </li>
+              <li class="app-social-list__item">
+                <a href="/#" class="app-social-list__item-link" aria-label="ссылка на страницу в Одноклассниках">
+                  <img src="/assets/social/ok.png" width="11" height="17" alt="одноклассники logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form>
+            <p class="footer__title">
+              Подписаться на рассылку <br />
+              E-Mail*
+            </p>
+            <input
+              class="footer__input"
+              name="uf-email"
+              id="uf-email"
+              type="text"
+              required
+              placeholder="Введите email"
+              pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+            />
+            <div class="input-checkbox">
+              <input class="input-checkbox__input" type="checkbox" name="agree-privacy" id="agree-privacy" required />
+              <label class="input-checkbox__label" for="agree-privacy"
+                >Я даю согласия на обработку персональных данных и ознакомлен с политикой обработки персональных
+                данных</label
+              >
+            </div>
+            <div class="input-checkbox">
+              <input class="input-checkbox__input" type="checkbox" name="agree-ads" id="agree-ads" required />
+              <label class="input-checkbox__label" for="agree-ads"> Я даю согласия на получение рекламы </label>
+            </div>
+            <button type="submit" class="primary-button footer__subs-button">Подписаться</button>
+          </form>
+        </div>
+        <div class="footer__bottom">
+          <a href="/">
+            <picture>
+              <source srcset="/assets/logo-color.webp" type="image/webp" />
+              <img src="/assets/logo-color.png" width="237" height="40" alt="Голдис голотип" />
+            </picture>
+          </a>
+          <p>&copy; 2010-2024, ООО "ЮВЕКА-Ломбард", Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+    <!-- <script type="module" src="/ts/scripts.ts"></script> -->
+    <script type="module" src="/ts/akcii.ts"></script>
+  </body>
+</html>

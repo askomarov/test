@@ -1,0 +1,23 @@
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.21;
+  outline: 0;
+  border: 0;
+  background-color: $color-primary;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: rgba($color: $color-primary, $alpha: 75%);
+  }
+
+  &:active {
+    background-color: rgba($color: $color-primary, $alpha: 50%);
+  }
+}

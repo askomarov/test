@@ -1,0 +1,29 @@
+// =========================================
+@use "./foundation/mixins/media-query";
+@use "./foundation/variables/color" as *;
+
+// =========================================
+// Foundation
+// =========================================
+@import "./foundation/variables/breakpoints";
+@import "./foundation/fonts";
+@import "./foundation/base";
+
+// components
+@import "./components/container";
+@import "./components/app-button";
+@import "./components/app-card";
+@import "./components/app-title";
+@import "./components/primary-button";
+@import "./components/data-accordion";
+
+// @import "./components/swiper";
+@import "./components/input-wrap";
+@import "./components/contact-form";
+
+// blocks
+@import "./blocks/header";
+@import "./blocks/footer";
+
+// faq page
+@import "./blocks/faq-section";
