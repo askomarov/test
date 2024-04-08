@@ -1,0 +1,26 @@
+// =========================================
+@use "./foundation/mixins/media-query";
+@use "./foundation/variables/color" as *;
+
+// =========================================
+// Foundation
+// =========================================
+@import "./foundation/variables/breakpoints";
+@import "./foundation/fonts";
+@import "./foundation/base";
+
+// components
+@import "./components/container";
+@import "./components/app-button";
+@import "./components/app-card";
+@import "./components/app-title";
+@import "./components/primary-button";
+@import "./components/secondary-button";
+
+// blocks
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/akcii";
+@import "./blocks/akcii-list";
+@import "./blocks/other-akcii";
+@import "./blocks/akciya";

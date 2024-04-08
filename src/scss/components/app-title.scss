@@ -1,0 +1,10 @@
+.app-title {
+  font-family: Copperplate, serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+
+  @media (min-width: $width-tablet) {
+    font-size: 45px;
+  }
+}

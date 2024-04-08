@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Copperplate;
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Copperplate"),
+    url("copperplate-regular.woff2") format("woff2"),
+    url("copperplate-regular.woff") format("woff"),
+    url("copperplate-regular.ttf") format("truetype");
+}

@@ -1,0 +1,31 @@
+.about {
+  padding-block: 60px;
+
+  @media (min-width: $width-tablet) {
+    padding-block: 60px 80px;
+  }
+}
+
+.about__container {
+  display: grid;
+  gap: 24px;
+
+  @media (min-width: $width-tablet) {
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $width-tablet-h) {
+    grid-template-columns: minmax(auto, 638px) 508px;
+  }
+}
+
+.about__title {
+  margin-bottom: 35px;
+}
+
+.about__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 26px;
+}
