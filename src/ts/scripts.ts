@@ -3,6 +3,8 @@ import Swiper from 'swiper';
 import { Pagination, Navigation } from 'swiper/modules';
 import type { SwiperOptions } from 'swiper/types';
 
+const SLIDES_COUNT_TO_DISABLE_SLIDER = 4;
+const BREAKPOINT_TO_DISABLE_SLIDER = 1440;
 const heroSection: HTMLElement | null = document.querySelector('.hero');
 const servicesSliderEl: HTMLElement | null =
 document.querySelector(".hero-swiper");
@@ -44,6 +46,8 @@ if ( heroSection && servicesSliderEl) {
 const reviewsSection: HTMLElement | null = document.querySelector('.reviews-section')
 const reviewsSliderEl: HTMLElement | null =
 document.querySelector(".reviews-swiper");
+
+const revSliderCounts = reviewsSliderEl.querySelectorAll('.swiper-slide').length;
 if (reviewsSection && reviewsSliderEl) {
   const revSliderButtonNext: HTMLElement | null = reviewsSection.querySelector(
     ".swiper__button--next"
@@ -51,6 +55,8 @@ if (reviewsSection && reviewsSliderEl) {
   const revSliderButtonPrev: HTMLElement | null = reviewsSection.querySelector(
     ".swiper__button--prev"
   );
+
+  let swiperInstance;
   const revSwiperOptions: SwiperOptions = {
     modules: [Pagination, Navigation],
     spaceBetween: 23,
@@ -76,13 +82,33 @@ if (reviewsSection && reviewsSliderEl) {
     }
   };
   const initSwiper = ()=>{
-    const swiper = new Swiper('.reviews-swiper', revSwiperOptions);
-    return swiper;
+    swiperInstance = new Swiper('.reviews-swiper', revSwiperOptions);
+    return swiperInstance;
+  }
+  function disableSwiper() {
+    swiperInstance.disable();
+  }
+
+  function enableSwiper() {
+    if (revSliderCounts < SLIDES_COUNT_TO_DISABLE_SLIDER && window.innerWidth >= BREAKPOINT_TO_DISABLE_SLIDER) {
+      swiperInstance.slideTo(0);
+      disableSwiper();
+      reviewsSliderEl?.classList.add('enable')
+    } else {
+      swiperInstance.enable();
+      reviewsSliderEl?.classList.remove('enable')
+    }
   }
   window.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", () => {
       initSwiper();
+      enableSwiper();
+      console.log(revSliderCounts);
+
     });
+  });
+  window.addEventListener("resize", () => {
+    enableSwiper();
   });
 }
 
